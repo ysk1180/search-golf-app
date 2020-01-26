@@ -47,7 +47,7 @@ class Home extends React.Component {
             <div className="field">
               <label><i className="yen sign icon"></i>上限金額</label>
               <select className="ui dropdown" name="dropdown" value={this.state.budget} onChange={e => this.setState({ budget: e.target.value })}>
-                <option value="7000">7,000円</option>
+                <option value="8000">8,000円</option>
                 <option value="12000">12,000円</option>
                 <option value="16000">16,000円</option>
               </select>
@@ -55,19 +55,16 @@ class Home extends React.Component {
             <div className="field">
               <label><i className="map pin icon"></i>移動時間計算の出発地点（自宅から近い地点をお選びください）</label>
               <select className="ui dropdown" name="dropdown" value={this.state.departure} onChange={e => this.setState({ departure: e.target.value })}>
-                <option value="1">二子玉川駅</option>
-                <option value="2">吉祥寺駅</option>
-                <option value="3">赤羽駅</option>
-                <option value="4">錦糸町駅</option>
-                <option value="5">川崎駅</option>
+                <option value="1">東京駅</option>
+                <option value="2">横浜駅</option>
               </select>
             </div>
             <div className="field">
               <label><i className="car icon"></i>車での移動時間の上限</label>
               <select className="ui dropdown" name="dropdown" value={this.state.duration} onChange={e => this.setState({ duration: e.target.value })}>
                 <option value="60">60分</option>
+                <option value="90">90分</option>
                 <option value="120">120分</option>
-                <option value="150">150分</option>
               </select>
             </div>
             <div className="Search__Button">
